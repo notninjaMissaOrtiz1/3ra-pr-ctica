@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Declaraci¢n de variables
+        int numint;
+        double numdbl, res1, res2, res3, res4, res5, res6;
+
+        // Mensaje de bienvenida
+        System.out.print("Bienvenidos, favor de seguir las instrucciones \n");
+
+        // Obtener datos del usuario:
+        Scanner scanner = new Scanner(System.in);
+
+        // Ingresar un n£mero entero
+        System.out.printf("Digite un n£mero entero: ");
+        numint = scanner.nextInt();
+
+        // Ingresar un n£mero decimal
+        System.out.printf("\nDigite un n£mero decimal: ");
+        numdbl = scanner.nextDouble();
+
+        // Realizar operaciones:
+        res1 = numdbl + numint;          // Suma de los n£meros
+        res2 = numint / (int) numdbl;    // Divisi¢n de entero entre entero
+        res3 = numint / numdbl;          // Divisi¢n de entero entre decimal
+        res4 = numdbl / numint;          // Divisi¢n de decimal entre entero
+        res5 = (int) numdbl / numint;    // Divisi¢n de entero entre entero
+        res6 = (int) numdbl + numint;    // Suma de entero con decimal convertido a entero
+
+        // Mostrar resultados con formato:
+        System.out.printf("\nEl valor de la operaci¢n 1 (numdbl + numint) = %.2f", res1);
+        System.out.printf("\nEl valor de la operaci¢n 2 (numint / (int) numdbl) = %.2f", res2);
+        System.out.printf("\nEl valor de la operaci¢n 3 (numint / numdbl) = %.2f", res3);
+        System.out.printf("\nEl valor de la operaci¢n 4 (numdbl / numint) = %.2f", res4);
+        System.out.printf("\nEl valor de la operaci¢n 5 ((int) numdbl / numint) = %.2f", res5);
+        System.out.printf("\nEl valor de la operaci¢n 6 ((int) numdbl + numint) = %.2f", res6);
+    }
+}
